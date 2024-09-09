@@ -5,7 +5,7 @@ let colorButton = document.getElementById("btn-change-color");
 let paragraph2 = document.getElementById("p2");
 let paragraph3 = document.getElementById("p3");
 
-let color = document.getElementById("txt-color").value;
+let color = document.getElementById("txt-color");
 
 hideButton.addEventListener('click', () => {
     paragraph2.style.display = 'none';
@@ -16,6 +16,7 @@ showButton.addEventListener('click', () => {
 })
 
 colorButton.addEventListener('click', () => {
-    paragraph3.style.backgroundColor = color;
+    let newColor = color.value;
+    paragraph3.style.backgroundColor = newColor;
 })
 
