@@ -7,7 +7,7 @@ let paragraph3 = document.getElementById("p3");
 
 let color = document.getElementById("txt-color");
 
-let shape = document.getElementById("shapeChanger");
+let shape = document.getElementById("shapeSelector");
 
 hideButton.addEventListener('click', () => {
     paragraph2.style.display = 'none';
@@ -23,11 +23,10 @@ colorButton.addEventListener('click', () => {
 })
 
 shape.addEventListener('change', () => {
-    let shapeToChange = document.getElementByID("shapeToChange");
-    let newShape = shape.value;
+    let shapeToChange = document.getElementByID("shape");
 
-    if(newShape === "Circle")
+    if(shape.value === "Circle")
     {
-        // shapeToChange.style.borderRadius = 
+        shapeToChange.style.borderRadius = "100px";
     }
 })
