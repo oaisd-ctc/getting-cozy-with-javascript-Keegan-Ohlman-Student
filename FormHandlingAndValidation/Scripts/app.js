@@ -17,7 +17,7 @@ button.addEventListener('click', (e) => {
         document.getElementById('emailError').innerHTML = "Your email must include a '@' and a '.' symbol.";
     }
 
-    if(age <= 10 || age >= 100)
+    if(age < 10 || age > 100)
     {
         e.preventDefault();
         document.getElementById('ageError').innerHTML = "Your age must be between 10 and 100.";
