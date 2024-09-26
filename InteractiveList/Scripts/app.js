@@ -1,6 +1,5 @@
 let button = document.getElementById('btn-add');
 let list = document.getElementById('list');
-let arr = [];
 
 button.addEventListener('click', () => {
     let itemToAdd = document.getElementById('itemToAdd').value;
@@ -12,13 +11,7 @@ button.addEventListener('click', () => {
     deleteButton.appendChild(document.createTextNode("Delete"));
     item.appendChild(deleteButton);
 
-    arr.push(item);
-})
-
-list.addEventListener('click', (e) => {
-    if(e.target.tagName === 'BUTTON')
-    {
-        //not working properly yet
+    deleteButton.addEventListener('click', () => {
         item.remove();
-    }
+    })
 })
