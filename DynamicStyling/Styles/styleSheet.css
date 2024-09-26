@@ -1,0 +1,14 @@
+.blue{
+    color: blue;
+    font-size: 18px;
+}
+
+.red{
+    color: red;
+    font-style: italic;
+}
+
+.green{
+    color: green;
+    background-color: lightgreen;
+}
